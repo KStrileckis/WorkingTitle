@@ -15,7 +15,7 @@ class Virtual_Network:
                 self.hex_limit -= 1
                 self.targets.append(Cipher(randint(1,7), False, i))
             else:
-                self.targets.append(Cipher(randint(1,7), True, i))
+                self.targets.append(Cipher(randint(1,7), False, i))
             self.hex_chance_upper -= 1
             if self.hex_chance_upper < 1:
                 self.hex_chance_upper = 1
